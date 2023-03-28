@@ -23,7 +23,7 @@ ENV CORDOVA_VERSION 11.0.0
 
 WORKDIR "/tmp"
 
-RUN npm i -g --unsafe-perm cordova@${CORDOVA_VERSION} && \
+RUN npm i -g --unsafe-perm cordova@${CORDOVA_VERSION} cordova-res && \
     cordova -v
 
 # IONIC
